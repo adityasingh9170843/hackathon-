@@ -1,0 +1,113 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers everything */
+    padding: 20px;
+    height: 100vh;
+    background: #0d0d0d;
+    position: relative;
+  }
+  
+  /* Centering the tab container properly */
+  .tab-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+  }
+  
+  .hero-tab-logo img {
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .hero-tab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Ensures alignment */
+    align-items: center;
+    background: rgba(80, 0, 120, 0.5);
+    padding: 15px 20px;
+    border-radius: 15px;
+    border: 1px solid #6a0dad;
+    backdrop-filter: blur(5px);
+    gap: 15px;
+    width: fit-content;
+  }
+  
+  /* Buttons inside hero-tab */
+  .hero-tab button {
+    position: relative;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 180px;
+  }
+  
+  /* SVG adjustments */
+  .hero-tab button .nav-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .hero-tab button:hover .nav-svg path {
+    stroke: #ff00ff;
+  }
+  
+  /* Hero Banner Adjustments */
+  .hero-banner {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Properly centers the button */
+  .banner-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .banner-button button {
+    position: relative;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+  }
+  
+  .banner-button button:hover .nav-svg path {
+    stroke: #ff00ff;
+  }
+  
+  .hero-banner img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
