@@ -1,0 +1,21 @@
+.scroll-second-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd; 
+    padding: 10px 0;
+  }
+  
+  .scrollsecond-wrapper {
+    display: flex;
+     
+   gap: 280px;
+  }
+  
+  .scroll-second-image {
+    height: 90px; 
+    object-fit: contain;
+  }
+  

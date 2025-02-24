@@ -1,0 +1,51 @@
+footer {
+  padding: 100px 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1c1a22;
+  color: white;
+  font-family: "Press Start 2P", sans-serif;
+  
+}
+
+.copyright {
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+
+.footer-content {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-content h3 {
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-content h3:hover {
+  color: #bbbbbb;
+}
+
+.footer-content h3:not(:last-child) {
+  position: relative;
+  padding-right: 20px;
+}
+
+.footer-content h3:not(:last-child)::after {
+  content: " ";
+  position: absolute;
+  width: 4px;
+  height: 12px;
+  background-color: rgb(255, 255, 255);
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+}

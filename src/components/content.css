@@ -1,0 +1,55 @@
+.content-container {
+  padding: 300px;
+  display: flex;
+  background-color: black;
+  align-items: center;
+  gap: 50px;
+  
+}
+
+.thunder-logo {
+  position: absolute;
+  left: 20px;    
+  top: 110%;
+  transform: translateY(-50%);
+  width: 310px;   
+  height: auto;
+  z-index: 2;   
+}
+
+
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+
+
+.content h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  font-family: "Press Start 2P", serif;
+  margin-right: 80px;
+  text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.4);
+}
+.content span {
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-family: "Press Start 2P", serif;
+  margin-right: 80px;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4);
+}
+.upper-content {
+  margin-bottom: 80px;
+}
+.lower-content {
+  display: flex;
+  flex-direction: row;
+}
