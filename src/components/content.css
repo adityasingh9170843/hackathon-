@@ -1,3 +1,4 @@
+
 .content-container {
   padding: 280px;
   display: flex;
@@ -18,20 +19,11 @@
 }
 
 @keyframes flicker {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  80% {
-    opacity: 1;
-  }
+  0%, 100% { opacity: 0; }
+  20%, 80% { opacity: 1; }
+  50% { opacity: 0.5; }
 }
+
 .content {
   position: relative;
   display: flex;
@@ -49,6 +41,7 @@
   margin-right: 80px;
   text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.4);
 }
+
 .content span {
   color: white;
   font-size: 25px;
@@ -58,15 +51,118 @@
   margin-right: 80px;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4);
 }
+
 .upper-content {
   margin-bottom: 80px;
 }
+
 .lower-content {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  gap: 20px; 
+  gap: 20px;
 }
-.lower-content span{
+
+.lower-content span {
   white-space: nowrap;
+}
+
+.video-container iframe {
+  width: 1000px;
+  height: 541px;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 1024px) {
+  .content-container {
+    flex-direction: column;
+    padding: 100px 40px;
+    text-align: center;
+  }
+
+  .thunder-logo {
+    width: 250px;
+    left: auto;
+    right: auto;
+    top: auto;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .content h1 {
+    font-size: 32px;
+    margin-right: 0;
+  }
+
+  .content span {
+    font-size: 20px;
+    margin-right: 0;
+  }
+
+  .lower-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .content-container {
+    padding: 80px 20px;
+    gap: 40px;
+  }
+
+  .thunder-logo {
+    width: 200px;
+  }
+
+  .content h1 {
+    font-size: 28px;
+  }
+
+  .content span {
+    font-size: 18px;
+  }
+
+  .lower-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-container iframe {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .content-container {
+    padding: 60px 10px;
+    gap: 30px;
+  }
+
+  .thunder-logo {
+    width: 150px;
+  }
+
+  .content h1 {
+    font-size: 24px;
+  }
+
+  .content span {
+    font-size: 16px;
+  }
+
+  .lower-content {
+    flex-direction: column;
+    gap: 20px;
+  }
 }

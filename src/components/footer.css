@@ -49,3 +49,46 @@ footer {
   top: 50%;
   transform: translateY(-50%);
 }
+
+
+@media(max-width:1024px){
+  footer{
+    padding: 60px 80px;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  .footer-content{
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media(max-width:768px){
+  footer{
+    padding: 40px 40px;
+  }
+  .copyright{
+    font-size: 12px;
+  }
+  .footer-content h3{
+    font-size: 12px;
+  }
+  .footer-content h3:not(:last-child)::after{
+    display: none;
+  }
+}
+
+@media(max-width:480px){
+  footer{
+    padding: 30px 20px;
+  }
+  .footer-content h3::after{
+    font-size: 10px;
+  }
+  .footer-content h3:not(:last-child)::after{
+    width: 3px;
+    height: 10px;
+    
+  }
+}

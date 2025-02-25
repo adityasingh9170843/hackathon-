@@ -2,7 +2,6 @@ import React from "react";
 import "./Hero.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variant";
-import { FaBars,FaTimes } from "react-icons/fa";
 
 
 const tabs = [
@@ -15,8 +14,7 @@ const tabs = [
 ];
 
 function Hero() {
-
-  const [MenuOpen, setMenuOpen] = React.useState(false);
+  
 
   return (
     <section className="hero">
@@ -24,6 +22,9 @@ function Hero() {
         <source src="/public/hero-bg.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+
+      
+
       <motion.div
         className="tab-container"
         variants={fadeIn("up", 0.2)}
