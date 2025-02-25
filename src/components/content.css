@@ -1,32 +1,43 @@
 .content-container {
   padding: 300px;
   display: flex;
-  background-color: black;
+  background: linear-gradient(135deg, #1a0d2f, #2a123d);
   align-items: center;
   gap: 50px;
-  
 }
 
 .thunder-logo {
   position: absolute;
-  left: 20px;    
+  left: 2px;
   top: 110%;
   transform: translateY(-50%);
-  width: 310px;   
+  width: 310px;
   height: auto;
-  z-index: 2;   
+  z-index: 2;
+  animation: flicker 1s infinite;
 }
 
-
-
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 1;
+  }
+}
 .content {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
 }
-
-
 
 .content h1 {
   color: white;
