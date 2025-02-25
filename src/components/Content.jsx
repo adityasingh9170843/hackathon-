@@ -1,5 +1,5 @@
 import React from "react";
-import "./Content.css";
+import "./content.css";
 import { motion } from "framer-motion";
 import thunder from "/public/thunder.png";
 
