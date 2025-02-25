@@ -2,10 +2,10 @@ import React from 'react'
 import "./scroll.css"
 
 const images =[
-    "/public/scroll1.png",
-    "/public/scroll2.png",  
-    "/public/scroll3.png",
-    "/public/scroll4.png",
+    "/scroll1.png",
+    "/scroll2.png",  
+    "/scroll3.png",
+    "/scroll4.png",
 ]
 
 function Scroll() {

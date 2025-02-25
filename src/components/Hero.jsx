@@ -19,7 +19,7 @@ function Hero() {
   return (
     <section className="hero">
       <video autoPlay loop muted className="hero-video">
-        <source src="/public/hero-bg.mp4" type="video/mp4" />
+        <source src="/hero-bg.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -33,7 +33,7 @@ function Hero() {
         viewport={{ once: false, amount: 0.7 }}
       >
         <div className="hero-tab-logo">
-          <img src="/public/tab.png" alt="Hackindia_logo" />
+          <img src="/tab.png" alt="Hackindia_logo" />
         </div>
         <div className="hero-tab">
           {tabs.map((tab, index) => (
@@ -79,10 +79,10 @@ function Hero() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <motion.div className="banner-img" whileHover={{ scale: 1.05 }}>
-          <img src="/public/singularity.png" alt="banner_img" />
+          <img src="/singularity.png" alt="banner_img" />
         </motion.div>
         <motion.div whileHover={{ scale: 1.05 }}>
-          <img src="/public/main.png" alt="banner_img2" />
+          <img src="/main.png" alt="banner_img2" />
         </motion.div>
       </motion.div>
 
