@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header>
       <div className="nav-container">
         <div className="logo">
           <img src="./logo.png" alt="DcodeBlock Logo" />
         </div>
-        <div className="nav-links">
+
+        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+          ☰
+        </div>
+
+        <div className={`nav-links ${menuOpen ? "active" : ""}`}>
           <div className="nav-button">
             <button>
               <div>Sign In</div>

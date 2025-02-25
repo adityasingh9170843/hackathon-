@@ -27,3 +27,26 @@
     }
   }
   
+
+    
+@media (max-width: 768px) {
+  .scroll-wrapper {
+      gap: 15px;
+      animation-duration: 15s;
+  }
+
+  .scroll-image {
+      height: 50px;   
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-wrapper {
+      gap: 10px;
+      animation-duration: 12s;
+  }
+
+  .scroll-image {
+      height: 40px;   
+  }
+}
