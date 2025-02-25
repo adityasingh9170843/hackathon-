@@ -2,11 +2,11 @@ import React from 'react'
 import "./scrollSecond.css"
 
 const images =[
-    "/public/bn1.png",
-    "/public/bn2.png",
-    "/public/bn3.png",
-    "/public/bn4.png",
-    "/public/bn5.png",
+    "/bn1.png",
+    "/bn2.png",
+    "/bn3.png",
+    "/bn4.png",
+    "/bn5.png",
 ]
 
 function ScrollSecond() {
