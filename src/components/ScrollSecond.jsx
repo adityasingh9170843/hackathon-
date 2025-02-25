@@ -1,5 +1,5 @@
 import React from 'react'
-import "./scrollSecond.css"
+import "./scrollsecond.css"
 
 const images =[
     "/bn1.png",
