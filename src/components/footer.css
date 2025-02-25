@@ -3,7 +3,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1c1a22;
+  background: linear-gradient(135deg, #0d021f, #1a0d2f, #2a0f3e, #3a134d);
   color: white;
   font-family: "Press Start 2P", sans-serif;
   

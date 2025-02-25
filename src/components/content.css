@@ -1,9 +1,9 @@
 .content-container {
-  padding: 300px;
+  padding: 280px;
   display: flex;
-  background: linear-gradient(135deg, #1a0d2f, #2a123d);
+  background: linear-gradient(135deg, #0d021f, #1a0d2f, #2a0f3e, #3a134d);
   align-items: center;
-  gap: 50px;
+  gap: 120px;
 }
 
 .thunder-logo {
@@ -37,6 +37,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  width: auto;
 }
 
 .content h1 {
@@ -63,4 +64,9 @@
 .lower-content {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px; 
+}
+.lower-content span{
+  white-space: nowrap;
 }
