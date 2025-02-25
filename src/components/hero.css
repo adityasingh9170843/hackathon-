@@ -125,3 +125,93 @@
   position: relative;
   z-index: 1;
 }
+
+
+@media(max-width:1024px){
+  .hero {
+    height: 70vh;
+  }
+  .hero-video{
+    height: 70vh;
+    left: 0;
+    width: 100%;
+    filter: blur(3px) brightness(0.6);
+  }
+  .tab-container{
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .hero-tab{
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  }
+  .hero-tab button{
+    font-size: 14px;
+    min-width: 140px;
+    padding: 15px 30px;
+  }
+  .hero-banner{
+    margin-top: 50px;
+  }
+  .hero-banner img{
+    width: 80%;
+    max-width: 300px;
+  }
+  .banner-button button{
+    font-size: 14px;
+    padding: 15px 30px;
+    min-width: 160px;
+  }
+}
+
+@media(max-width:768px){
+  .hero{
+    height: 60vh;
+  }
+  .hero-video{
+    height: 60vh;
+  }
+  .hero-tab{
+    flex-direction: column;
+    gap: 5px;
+  }
+  .hero-tab button{
+    font-size: 12px;
+    min-width: 120px;
+    padding: 10px 20px;
+  }
+  .hero-banner img{
+    width: 70%;
+    max-width: 250px;
+  }
+  .banner-button button{
+    font-size: 12px;
+    padding: 12px 25px;
+    min-width: 140px;
+  }
+}
+
+@media(max-width:480px){
+  .hero{
+    height: 50vh;
+  }
+  .hero-video{
+    height: 50vh;
+  }
+  .hero-tab button{
+    font-size: 10px;
+    min-width: 100px;
+    padding: 8px 16px;
+  }
+  .hero-banner img{
+    width: 60%;
+    max-width: 200px;
+  }
+  .banner-button button{
+    font-size: 10px;
+    padding: 10px 20px;
+    min-width: 120px;
+  }
+}

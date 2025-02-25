@@ -2,6 +2,8 @@ import React from "react";
 import "./Hero.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variant";
+import { FaBars,FaTimes } from "react-icons/fa";
+
 
 const tabs = [
   "Overview",
@@ -13,6 +15,9 @@ const tabs = [
 ];
 
 function Hero() {
+
+  const [MenuOpen, setMenuOpen] = React.useState(false);
+
   return (
     <section className="hero">
       <video autoPlay loop muted className="hero-video">
