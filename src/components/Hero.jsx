@@ -1,5 +1,5 @@
 import React from "react";
-import "./Hero.css";
+import "./hero.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variant";
 
