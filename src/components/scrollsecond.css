@@ -24,9 +24,16 @@
         overflow-x: auto; 
         white-space: nowrap; 
         scrollbar-width: none; 
+        -ms-overflow-style: none; 
+        display: block; 
+    }
+
+    .scroll-second-container::-webkit-scrollbar {
+        display: none; 
     }
 
     .scrollsecond-wrapper {
+        display: inline-flex; 
         gap: 50px; 
     }
 }
