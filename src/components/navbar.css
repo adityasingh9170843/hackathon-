@@ -94,7 +94,7 @@ header::after {
     width: 100%;
     padding: 20px;
     text-align: center;
-    z-index: 100;
+    z-index: 9999;
   }
 
   .nav-links.active {
