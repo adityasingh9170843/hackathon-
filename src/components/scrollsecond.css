@@ -19,3 +19,14 @@
     object-fit: contain;
   }
   
+  @media (max-width: 768px) {
+    .scroll-second-container {
+        overflow-x: auto; 
+        white-space: nowrap; 
+        scrollbar-width: none; 
+    }
+
+    .scrollsecond-wrapper {
+        gap: 50px; 
+    }
+}
